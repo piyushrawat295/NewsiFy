@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Sudan war: General Burhan blames fall of Wad Madani on 'negligence'",
+            "description": "The army chief lambasts \"negligent\" commanders after a rival paramilitary group captured Wad Madani.",
+            "url": "https://www.bbc.co.uk/news/world-africa-67801561",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/15BF0/production/_132127098_gettyimages-1858100137-1.jpg",
+            "publishedAt": "2023-12-22T15:07:24.6098592Z",
+            "content": "Sudan's army chief has lambasted \"negligent\" commanders after a rival paramilitary group captured the strategic city of Wad Madani.\r\nThe army had been criticised for leaving the capital of Gezira sta… [+3330 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Portland shelter raises $50k from auction of rare gold Nikes found in donation bin",
+            "description": "The shoes, found at the bottom of a donation bin, were originally designed for director Spike Lee.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-67804341",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/154F2/production/_132128278_gettyimages-1127423983.jpg",
+            "publishedAt": "2023-12-22T15:07:21.7511995Z",
+            "content": "A Portland homeless shelter has raised $50,800 (£39,900) off of a rare pair of sneakers that were left behind in its donation bin.\r\nThe gold Air Jordan sneakers were discovered by employees at the Po… [+2342 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Alex Batty: Police launch abduction investigation into disappearance of British teen",
+            "description": "Alex Batty, 17, who returned to the UK this week, went missing while on holiday at the age of 11.",
+            "url": "https://www.bbc.co.uk/news/uk-67803339",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1716C/production/_132127549_p0h1515y.jpg",
+            "publishedAt": "2023-12-22T15:07:18.1062763Z",
+            "content": "Media caption, Watch: Alex Batty reunites with gran and tells The Sun what he did in the years he was missing\r\nPolice say they have launched a criminal investigation into the alleged child abduction … [+1817 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Prague gunman killed himself after attack",
+            "description": "Czech police are still piecing together what led to Thursday's mass shooting, in which 14 people died.",
+            "url": "https://www.bbc.co.uk/news/world-europe-67799535",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/764A/production/_132128203_2d754cae4391f02b52821c552fd84ed9a70b6098.jpg",
+            "publishedAt": "2023-12-22T14:37:21.132553Z",
+            "content": "Media caption, Bodycam footage shows police hunting Prague gunman\r\nPrague police say the gunman who killed 14 people at a university on Thursday afternoon killed himself after being surrounded by the… [+3438 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Bodycam footage shows police hunting Prague gunman",
+            "description": "A gunman killed 14 people at a university in the Czech capital, before turning the gun on himself.",
+            "url": "https://www.bbc.co.uk/news/world-europe-67799890",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/F50C/production/_132123726_p0h145kq.jpg",
+            "publishedAt": "2023-12-22T11:37:15.5789937Z",
+            "content": "Czech police have released bodycam footage of officers searching for a gunman who killed 14 people at a university in the capital city of Prague on Thursday. \r\nIn the video, armed police can be seen … [+277 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Manuel Ellis: US jury clears police officers in death of unarmed black man",
+            "description": "Drugs and a heart condition killed Manuel Ellis, not restraining officers, a jury in Washington state finds.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-67801317",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/5048/production/_132125502_gettyimages-1217491989.jpg",
+            "publishedAt": "2023-12-22T11:22:19.7654619Z",
+            "content": "A US jury has cleared three police officers of all criminal charges in the death of an unarmed black man who died in police custody in 2020.\r\nProsecutors accused the officers of using deadly force on… [+2396 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Israel-Gaza live news: US expresses support for UN aid resolution on Gaza",
+            "description": "The vote, delayed until Friday, comes amid a warning that Gaza is at risk of famine if the war continues.",
+            "url": "https://www.bbc.co.uk/news/live/world-middle-east-67799517",
+            "urlToImage": "https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/5.3.0/bbc_news_logo.png",
+            "publishedAt": "2023-12-22T07:22:20.1379907Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Alex Batty says he lied about escape from commune to protect mum",
+            "description": "The teenager, who is now living with his grandmother, says the decision was spurred on by ambitions to study at college.",
+            "url": "https://www.bbc.co.uk/news/uk-67797742",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/3287/production/_132053921_b84bdd7274e933b640895a6958f0ac2b91f6ffda0_25_1024_5751000x563.jpg",
+            "publishedAt": "2023-12-22T03:07:18.2939218Z",
+            "content": "British teenager Alex Batty has revealed he lied about the details of his escape to protect his mother and grandfather from police.\r\nIn an interview with Tthe Sun, Alex said doubts about the nomadic … [+3785 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Vin Diesel: Film star accused of sexual battery by ex-assistant",
+            "description": "The Fast & Furious star is accused of forcing himself on a woman and firing her after she resisted.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-67797809",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/CA6E/production/_132122815_gettyimages-1488316782.jpg",
+            "publishedAt": "2023-12-22T03:07:17.0598558Z",
+            "content": "US actor Vin Diesel's former personal assistant is suing the Fast &amp; Furious star, accusing him of sexual assault during the 2010 filming of Fast Five. \r\nA lawyer for the actor, real name Mark Sin… [+2636 chars]"
+        },
+        {
+            "source": {
+                "id": "bbc-news",
+                "name": "BBC News"
+            },
+            "author": "BBC News",
+            "title": "Oddest robberies of 2023 caught on camera",
+            "description": "From vodka and orange juice to a giant gorilla statue, here's a round-up of 2023's weirdest thefts.",
+            "url": "https://www.bbc.co.uk/news/world-us-canada-67798765",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/13A8/production/_132123050_p0h11yr1.jpg",
+            "publishedAt": "2023-12-22T01:22:12.1686582Z",
+            "content": "Surveillance cameras across the US captured many strange thefts this year. Why would someone steal a gorilla statue?\r\nFrom one thirsty burglar stealing vodka and orange juice, to another befriending … [+101 chars]"
+        }
+    ]
+}
