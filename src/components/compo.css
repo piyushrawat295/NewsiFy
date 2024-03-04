@@ -10,6 +10,21 @@ body {
   flex-direction: column;
 }
 
+
+.card {
+  width: 90%;
+  max-width: 410px;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+  background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%);
+  background-blend-mode: normal, normal, screen, overlay, normal;
+  box-shadow: 0px 0px 10px 1px #000000;
+  margin: 0 auto; /* To center the card on smaller screens */
+}
+
+
+
 /* Navbar styles */
 .navbar {
   display: flex;
@@ -183,49 +198,170 @@ body {
   transform: scaleX(1);
 }
 
-label {
-  width: 75px;
-  height: 38px; /* Adjusted height */
+
+/* The switch - the box around the slider */
+#theme-toggle-button {
+  font-size: 9px;
   position: relative;
-  display: block;
-  background: #ebebeb;
-  border-radius: 40px;
-  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  width: 7em;
   cursor: pointer;
-  transition: 0.4s;
 }
 
-label:after {
-  content: "";
-  width: 30px; /* Adjusted width */
-  height: 30px; /* Adjusted height */
-  position: absolute;
-  top: 5px; /* Adjusted top position */
-  left: 5px; /* Adjusted left position */
-  background: linear-gradient(180deg, #ffcc89, #d8860b);
-  border-radius: 30px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  transition: 0.4s;
-}
-
-/* Rest of your existing CSS remains the same */
-
-input {
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
   width: 0;
   height: 0;
-  visibility: hidden;
 }
 
-input:checked + label {
-  background: #242424;
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
 }
-input:checked + label:after {
-  left:70px;
-  transform: translateX(-100%);
-  background: linear-gradient(180deg,#777,#3a3a3a);
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
 }
 
 
-label:active:after{ 
-  width: 40px; 
+
+.loader-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.loader:before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 6px solid #007bff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.loader:after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top-color: #007bff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: spin 2s linear infinite;
+}
+
+.loader-text {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #007bff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  display: none;
+}
+
+.loaded .loader-container {
+  display: none;
+}
+
+.loaded .content {
+  display: block;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 700px) {
+  .mobile-toggle {
+    /* Adjust the positioning for mobile view */
+    /* Add your styles to move it to the right side or as needed */
+    float: right; /* or any other style to move it to the right */
+  }
 }

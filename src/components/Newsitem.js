@@ -10,7 +10,8 @@ class Newsitem extends Component {
 
     return (
       <div className="my-2">
-        <div className="card" style={{ position: 'relative', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
+        <div className='card'>
+        {/* <div className="card" style={{ position: 'relative', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}> */}
           <span className="position-absolute top-0  translate-middle badge rounded-pill bg-primary" style={{ left: '92%', zIndex: '1' }}>
             {sources}
           </span>
@@ -18,6 +19,7 @@ class Newsitem extends Component {
             src={!imageUrl ? defaultImageUrl : imageUrl}
             className="card-img-top img-fluid"
             alt="..."
+            style={{ width: 'auto', height: '100%' }}
           />
           <div className="card-body">
             <h5 className="card-title">{title ? title.slice(0, 45) : ""}...</h5>
