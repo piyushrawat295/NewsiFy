@@ -1,85 +1,72 @@
-
-// Navbar.js
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './compo.css';
 
-class Navbar extends Component {
-  render() {
-    const { toggleMode } = this.props;
+const Navbar = ({ toggleMode }) => {
+  return (
+    <>
+      <nav className={`navbar navbar-expand-lg sticky-top navbar-dark bg-dark`}>
+        <div className="container-fluid">
+          <NavLink className="navbar-brand" to="/" style={{ color: '#fff' }}>
+            NewsiFy
+          </NavLink>
 
-    return (
-      <>
-        <nav className={`navbar navbar-expand-lg sticky-top navbar-dark bg-dark`}>
-          <div className="container-fluid">
-            <NavLink className="navbar-brand" to="/" style={{ color: '#fff' }}>
-              NewsiFy
-            </NavLink>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style={{ color: '#fff' }}
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              style={{ color: '#fff' }}
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
+          <div className="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <NavLink className="nav-link" exact="true" to="/">
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" exact="true" to="/business">
+                  Business
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" exact="true" to="/entertainment">
+                  Entertainment
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" exact="true" to="/health">
+                  Health
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" exact="true" to="/science">
+                  Science
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" exact="true" to="/sports">
+                  Sports
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" exact="true" to="/technology">
+                  Technology
+                </NavLink>
+              </li>
+            </ul>
 
-            <div className="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <NavLink className="nav-link" exact="true" to="/">
-                    Home
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" exact="true" to="/business">
-                    Business
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" exact="true" to="/entertainment">
-                    Entertainment
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" exact="true" to="/health">
-                    Health
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" exact="true" to="/science">
-                    Science
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" exact="true" to="/sports">
-                    Sports
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" exact="true" to="/technology">
-                    Technology
-                  </NavLink>
-                </li>
-              </ul>
-
-              {/* <div className={`form-check form-switch text-${mode === 'light' ? 'grey' : 'white'}mobile-toggle`}> */}
-                {/* <input
-                  className="form-check-input"
-                  onChange={toggleMode}  // Use onChange instead of onClick
-                  type="checkbox"
-                  role="switch"
-                  id="darkmode-toggle"
-                /> */}
-                <div className='mobile-toggle'>
-                <label id="theme-toggle-button">
-                  <input type="checkbox" id="toggle" onChange={toggleMode} />
-                  <svg viewBox="0 0 69.667 44" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+            <div className='mobile-toggle'>
+              <label id="theme-toggle-button">
+                <input type="checkbox" id="toggle" onChange={toggleMode} />
+                <svg viewBox="0 0 69.667 44" xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(3.5 3.5)" data-name="Component 15 – 1" id="Component_15_1">
 
 
@@ -133,14 +120,14 @@ class Navbar extends Component {
                       </g>
                     </g>
                   </svg>
-                </label>
-              </div>
+                
+              </label>
             </div>
           </div>
-        </nav>
-      </>
-    );
-  }
-}
+        </div>
+      </nav>
+    </>
+  );
+};
 
 export default Navbar;
